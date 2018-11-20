@@ -9,5 +9,7 @@ public interface NodesStorage {
     int addValue(int value);
     int addRelation(int parentId, int childId);
     void deleteRelation(int relationId);
+    ArrayList<Long> getChilds(int nodeId);
+    ArrayList<Long> getParents(int nodeId);
     ArrayList<Node> getArrayNodes();
 }
